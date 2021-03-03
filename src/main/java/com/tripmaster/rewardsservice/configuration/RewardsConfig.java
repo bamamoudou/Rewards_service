@@ -14,6 +14,7 @@ public class RewardsConfig {
 	}
 
 	@Bean
-	public TripPricer getTripPricer() { return new TripPricer();
+	public TripPricer getTripPricer() { 
+		return new TripPricer();
 	}
 }
