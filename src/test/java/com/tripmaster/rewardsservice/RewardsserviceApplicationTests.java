@@ -5,10 +5,14 @@ import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RewardsserviceApplicationTests {
+public class RewardsserviceApplicationTests {
+	
+	public RewardsserviceApplicationTests() {
+		
+	}
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 	}
 
 }

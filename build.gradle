@@ -16,8 +16,8 @@ repositories {
 }
 
 bootJar {
-   baseName = 'tourGuide'
-   version = '1.0.0'
+    baseName = 'rewardcentral_api'
+    version =  '1.0.0'
 }
 
 repositories {
@@ -41,40 +41,6 @@ dependencies {
     compile(name:'RewardCentral', ext:'jar')
     
     
-    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
-    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
-    
     testCompile("junit:junit")
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.6.RELEASE'
-}
-
-test {
-	useJUnitPlatform()
-}
-
-jacoco {
-    toolVersion = "0.8.4"
-}
-
-jacocoTestReport {
-    reports {
-        xml.enabled true
-        csv.enabled false
-        html.destination file("${buildDir}/jacocoHtml")
-    }
-}
-
-test.finalizedBy jacocoTestReport
-check.dependsOn jacocoTestCoverageVerification
-
-jacocoTestCoverageVerification {
-    violationRules {
-        rule {
-            limit {
-                counter = 'LINE'
-                value = 'COVEREDRATIO'
-                minimum = 0.5
-            }
-        }
-    }
 }
