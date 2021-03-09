@@ -1,4 +1,4 @@
-package com.tripmaster.rewardsservice.controller;
+package com.tripmaster.rewardsservice;
 
 import java.util.UUID;
 
